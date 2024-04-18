@@ -1,0 +1,43 @@
+:root{
+  font-size: 87%;
+}
+.btn{
+  min-width: 8rem;
+  height: 2.5rem;
+  /* margin-right: 0.3rem; */
+}
+
+
+.destaque {
+  border: 2px solid red;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.header{
+  background-color: black;
+  color:aliceblue;
+  display:flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;;
+}
+
+.header menu ul {
+  display:flex;
+
+}
+
+.header menu ul li {
+  list-style: none;
+  padding-left: 5rem;
+}
+
+.orientacao{
+  font-size: 0.8rem;
+  color: brown;
+
+}
