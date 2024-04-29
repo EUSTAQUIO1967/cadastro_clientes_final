@@ -7,7 +7,7 @@ export class Cliente{
   
 
     constructor(id: number, cpf: string, nome:string, endereco: string, telefone: string){
-        this.id = parseInt(id);
+        this.id = id;
         this.cpf = cpf;
         this.nome = nome;
         this.endereco = endereco;

@@ -50,7 +50,7 @@ const initApp = ():void=>{
     
         ListaCliente.instance.alterar(id, 
           Utils.mascCPF(inputCPF.value), 
-          inputNome.value, 
+          Utils.capitularTexto(inputNome.value), 
           inputEndereco.value,
           Utils.mascTelefone(Utils.retiraMascaraTelefone(inputTelefone.value))
           )
@@ -72,7 +72,12 @@ const initApp = ():void=>{
     if (resultValidacao.length === 0) {
       
       if (!ehPraAlterar){
-        const cliente = new Cliente( ++contador, Utils.mascCPF(inputCPF.value), inputNome.value, inputEndereco.value, Utils.mascTelefone(Utils.retiraMascaraTelefone(inputTelefone.value)));
+        const cliente = new Cliente( ++contador, 
+          Utils.mascCPF(inputCPF.value),  
+          Utils.capitularTexto(inputNome.value),
+          inputEndereco.value, 
+          Utils.mascTelefone(Utils.retiraMascaraTelefone(inputTelefone.value))
+        );
         ListaCliente.instance.adicionar(cliente);
         listar();
       } else {
@@ -132,7 +137,7 @@ const initApp = ():void=>{
 
    };
 
-   
+
 
 
    //const adicionaEventoClick = (elemento, comando) => elemento.addEventListener('click', comando);

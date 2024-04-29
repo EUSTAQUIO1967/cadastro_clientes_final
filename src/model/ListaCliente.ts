@@ -13,8 +13,8 @@ export class ListaCliente{
         return this.clientes;
     }
 
-    retornaIndice(idCliente: number):number {
-        let indice: number = this.clientes.indexOf(this.clientes.find(cliente => cliente.id === parseInt(idCliente)))
+    retornaIndice(idCliente: Number):Number {
+        let indice= this.clientes.indexOf(this.clientes.find(cli => cli.id === parseInt(idCliente))) as Number;
         return indice;
     }
 
